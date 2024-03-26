@@ -4,9 +4,6 @@ steps:
 
 - wait
 
-- label: "Fix permissions"
-  command: chmod +x ./src/generate-steps-from-stored-number.sh | chmod +x ./src/generate-and-store-number.sh | chmod +x ./src/fetch-and-display-number.sh 
-
 - label: ":pipeline:"
   command: chmod +x ./src/generate-steps-from-stored-number.sh | chmod +x ./src/generate-and-store-number.sh | chmod +x ./src/fetch-and-display-number.sh | ./src/generate-steps-from-stored-number.sh | buildkite-agent pipeline upload
 
