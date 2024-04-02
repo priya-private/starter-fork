@@ -1,0 +1,20 @@
+steps:
+  - command: some_test.sh
+    key: 'step1'
+
+
+  - label: "Run only if above fails"
+    depends_on: "step1"
+  - command: |
+      if [ $$(buildkite-agent step get "outcome" --step "step1") == "passed" ]; then
+         cat <<- YAML | buildkite-agent pipeline upload 
+         steps:
+           - label: "Notify slack about soft passed step"
+             command: echo "Notifying slack about the soft_failed step"
+             notify:
+               - slack:
+                   channels:
+                     - "#priya-test"
+                   message: "Step1 has soft failed."
+      YAML
+      fi
