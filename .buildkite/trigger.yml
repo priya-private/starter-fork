@@ -1,7 +1,7 @@
 - label: Testing triggers
   command: echo "hello"
 
-- trigger: https://buildkite.com/priya/step-notification
+- trigger: "step-notification"
   label: ":rocket: Deploy event trigger"
   branches: main
   build:
