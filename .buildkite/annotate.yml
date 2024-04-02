@@ -1,4 +1,3 @@
-steps:
   - label: annotate
     plugins:
       - bugcrowd/test-summary#v1.11.0:
