@@ -18,15 +18,15 @@ steps:
                    channels:
                      - "#priya-test"
                    message: "Step1 has passed."
-        else [ $$(buildkite-agent step get "outcome" --step "step1") != "passed" ]; then
-         cat <<- YAML | buildkite-agent pipeline upload 
-         steps:
-           - label: "Notify slack about soft passed step"
-             command: echo "Notifying slack about the failed step"
-             notify:
-               - slack:
-                   channels:
-                     - "#priya-test"
-                   message: "Step1 has failed."
+      else [ $$(buildkite-agent step get "outcome" --step "step1") != "passed" ]; then
+        cat <<- YAML | buildkite-agent pipeline upload 
+        steps:
+          - label: "Notify slack about soft passed step"
+            command: echo "Notifying slack about the failed step"
+            notify:
+              - slack:
+                  channels:
+                    - "#priya-test"
+                  message: "Step1 has failed."
       YAML
       fi
