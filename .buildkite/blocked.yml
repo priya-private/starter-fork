@@ -1,0 +1,30 @@
+steps:
+- build:
+    env:
+      REPO_TAG: tidy-api
+      REVISION: 9775
+      DEPLOY_ENVIRONMENT: testing
+    branch: master
+    message: Deploy tidy-api (9775) to testing
+  label: Deploy to testing
+  branches: master feature/*
+- build:
+    env:
+      REPO_TAG: tidy-api
+      REVISION: 9775
+      DEPLOY_ENVIRONMENT: staging
+    branch: master
+    message: Deploy tidy-api (9775) to staging
+  label: Deploy to staging
+  branches: master release/* hotfix/*
+- block: ":rocket: Release"
+  branches: master
+- build:
+    env:
+      REPO_TAG: tidy-api
+      REVISION: 9775
+      DEPLOY_ENVIRONMENT: production
+    branch: master
+    message: Deploy tidy-api (9775) to production
+  label: Deploy to production
+  branches: master
