@@ -1,0 +1,10 @@
+- label: Testing triggers
+  command: echo "hello"
+
+- trigger: https://buildkite.com/priya/step-notification
+  label: ":rocket: Deploy event trigger"
+  branches: main
+  env:
+    var1: “hello"
+    var2: “there
+
