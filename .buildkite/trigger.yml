@@ -5,7 +5,6 @@
   label: ":rocket: Deploy event trigger"
   branches: main
   build:
-    env:
-      var1: “hello"
-      var2: “there
+    meta_data:
+      release-version: "1.1"
 

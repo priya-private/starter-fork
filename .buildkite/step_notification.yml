@@ -1,5 +1,5 @@
 steps:
-  - command: echo "hello"
+  - command: echo (buildkite-agent meta-data get "release-version")
     key: 'step1'
 
   - wait: ~
@@ -16,6 +16,6 @@ steps:
                - slack:
                    channels:
                      - "#priya-test"
-                   message: "Step1 has passed. $var1"
+                   message: "Step1 has passed."
       YAML
       fi
