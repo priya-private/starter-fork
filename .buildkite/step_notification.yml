@@ -1,5 +1,5 @@
 steps:
-  - command: exit -1
+  - command: echo "hello"
     key: 'step1'
 
   - wait: ~
