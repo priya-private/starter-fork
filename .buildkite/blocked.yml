@@ -1,9 +1,13 @@
 steps:
 - label: Deploy to testing
-  branches: master feature/*
+  command: echo "hello"
+
 - label: Deploy to staging
-  branches: master release/* hotfix/*
+  command: echo "hello"
+
 - block: ":rocket: Release"
-  branches: master
+  branches: main
+  
 - label: Deploy to production
-  branches: master
+  command: echo "hello"
+
