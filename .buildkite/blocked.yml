@@ -7,7 +7,10 @@ steps:
 
 - block: ":rocket: Release"
   branches: main
-  
+
 - label: Deploy to production
   command: echo "hello"
+
+- label: Deploy to live
+  command: echo "reproduce"
 
