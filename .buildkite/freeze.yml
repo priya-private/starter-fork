@@ -8,7 +8,7 @@ steps:
   
 - label: Should we freeze?
   command: |
-      if [ $FREEZE ]; then
+      if [ $FREEZE == True ]; then
          cat <<- YAML | buildkite-agent pipeline upload 
          steps:
             - block: ":rocket: Currently under freeze"
