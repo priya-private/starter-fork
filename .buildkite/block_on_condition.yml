@@ -1,6 +1,6 @@
 steps:
 - label: Deploy to testing
-  command: echo "hello"
+  command: exit -1
   key: "step1"
 
 - wait: ~
