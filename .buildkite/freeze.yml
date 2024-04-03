@@ -1,17 +1,17 @@
 steps:
-- label: Deploy to testing
-  command: exit -1
+- label: Verify if freezed
+  command: echo "testing freeze $FREEZE"
   key: "step1"
 
 - wait: ~
   continue_on_failure: true
   
-- label: Failed or passed?
+- label: Should we freeze?
   command: |
-      if [ $$(buildkite-agent step get "outcome" --step "step1") != "passed" ]; then
+      if [ $FREEZE) ]; then
          cat <<- YAML | buildkite-agent pipeline upload 
          steps:
-            - block: ":rocket: Release"
+            - block: ":rocket: Currently under freeze"
               branches: main
       YAML
       fi
