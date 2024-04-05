@@ -1,5 +1,5 @@
 steps:
-  - command: buildkite-agent meta-data get "release-version"
+  - command: echo "hello"
     key: 'step1'
 
   - wait: ~
