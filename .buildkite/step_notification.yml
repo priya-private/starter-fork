@@ -16,6 +16,6 @@ steps:
                - slack:
                    channels:
                      - "#priya-test"
-                   message: "Step1 has passed."
+                   message: "Step1 has passed. @Priya "
       YAML
       fi
