@@ -2,6 +2,6 @@ steps:
   - command: git sparse-checkout set .buildkite | buildkite-agent meta-data set 'buildkite:git:commit' "$$BUILDKITE_COMMIT" 
     key: 'step1'
 
-  - command: echo "hello"
+  - command: buildkite-agent meta-data set 'buildkite:git:commit' "5674"
     depends_on: step1
     key: 'step2'
