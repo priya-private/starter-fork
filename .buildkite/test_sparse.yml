@@ -2,6 +2,7 @@ steps:
   - command: echo "testing metadata"
     key: 'step1'
 
-  - command: echo "hello"
+  - command: echo "hello one"
     depends_on: step1
     key: 'step2'
+  
