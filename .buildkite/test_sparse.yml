@@ -1,5 +1,5 @@
 steps:
-  - command: git sparse-checkout set .buildkite | buildkite-agent meta-data set 'buildkite:git:commit' "$$BUILDKITE_COMMIT" 
+  - command: git sparse-checkout set .buildkite| git checkout | buildkite-agent meta-data set 'buildkite:git:commit' "$$BUILDKITE_COMMIT" 
     key: 'step1'
 
   - command: buildkite-agent meta-data set 'buildkite:git:commit' "5674"
