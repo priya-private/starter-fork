@@ -1,0 +1,13 @@
+steps:
+  - label: Pipeline upload
+    command: buildkite-agent pipeline upload
+    key: "step1"
+    plugins:
+      - sparse-checkout:
+          paths:
+            - .buildkite
+
+  - command: echo "testing heading"
+    depends_on: step1
+
+  
