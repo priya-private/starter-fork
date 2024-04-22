@@ -7,7 +7,8 @@ steps:
           paths:
             - .buildkite
 
-  - command: echo "testing heading"
+  - label: "test"
+    command: echo "testing heading"
     depends_on: step1
 
   
