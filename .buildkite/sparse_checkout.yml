@@ -1,6 +1,6 @@
 steps:
   - label: Pipeline upload
-    command: buildkite-agent pipeline upload
+    command: echo "runnign sparse"
     key: "step1"
     plugins:
       - sparse-checkout:
