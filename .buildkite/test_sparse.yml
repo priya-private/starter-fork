@@ -4,7 +4,7 @@ steps:
     plugins:
       - sparse-checkout:
           paths:
-            - .buildkite
+          - .buildkite
 
   - command: echo "testing metadata"
     key: 'step1'
