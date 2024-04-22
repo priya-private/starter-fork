@@ -3,6 +3,5 @@ steps:
     command: echo "runnign sparse"
     key: "step1"
     plugins:
-      - sparse-checkout:
-          paths:
-            - .buildkite
+      - ssh://git@github.com/uzabase/sparse-checkout-buildkite-plugin.git#v0.1.0:
+          paths: .buildkite
