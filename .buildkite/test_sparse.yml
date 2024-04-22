@@ -1,4 +1,11 @@
 steps:
+  - label: "Pipeline upload"
+    command: "buildkite-agent pipeline upload"
+    plugins:
+      - sparse-checkout:
+          paths:
+            - .buildkite
+
   - command: echo "testing metadata"
     key: 'step1'
 
