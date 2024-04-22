@@ -6,9 +6,3 @@ steps:
       - sparse-checkout:
           paths:
             - .buildkite
-
-  - label: "test"
-    command: echo "testing heading"
-    depends_on: step1
-
-  
