@@ -1,3 +1,3 @@
 steps:
 - label: ":test multi line:"
-  command: echo "$foo" "$test"
+  command: echo  "$test"
