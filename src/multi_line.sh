@@ -2,8 +2,6 @@
 
 set -e
 
-foo=`line1
-line2
-line3`
+foo=`line1\nline2\nline3`
 
 export $foo
