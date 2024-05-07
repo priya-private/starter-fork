@@ -11,7 +11,7 @@ steps:
       if [ $$(buildkite-agent step get "outcome" --step "step1") != "passed" ]; then
          cat <<- YAML | buildkite-agent pipeline upload 
          steps:
-            - block: ":rocket: Relddeases"
+            - block: ":rocket: Reldddeases"
               branches: main
       YAML
       fi
