@@ -9,4 +9,7 @@ steps:
   depends_on: "step1"
   command: echo "done"
   agents:
-    queue: test,default-queue
+    queue: "test,default-queue"
+
+
+
