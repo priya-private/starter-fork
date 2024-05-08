@@ -3,10 +3,10 @@ steps:
   command: echo "hello"
   key: step1
   agents:
-    multi: 'yes'
+    queue: test,default-queue
 
 - label: Done
   depends_on: "step1"
   command: echo "done"
   agents:
-    multi: 'yes'
+    queue: test,default-queue
