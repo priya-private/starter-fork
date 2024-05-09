@@ -10,6 +10,3 @@ steps:
   command: echo "done"
   agents:
     queue: "test,default-queue"
-
-
-
