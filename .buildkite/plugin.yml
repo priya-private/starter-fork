@@ -13,8 +13,6 @@ steps:
     /usr/bin/buildkite-agent artifact upload "build/osie-4992-944dd165/*"
 - wait
 - label: ":qemu:\U0001F131\U0001F138\U0001F13E\U0001F142 x86_64"
-  agents:
-    queue: nvme-build
   command: |
     set -x
     pwd
