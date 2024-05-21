@@ -1,0 +1,6 @@
+steps:
+- label: testing hosted agent
+  command: echo "hello"
+  key: step1
+  agents:
+    queue: kubernetes
