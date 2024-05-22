@@ -8,16 +8,11 @@ pwd
 ls
 
 
-
-
-
-output=$(buildkite-agent artifact search foo1.txt 2>&1)
-status=$?
-
-echo "output $output"
-echo "status $status"
-
-if [ $status -eq 0 ]; then
+if buildkite-agent artifact search foo.txt; then
   echo "Artifact found"
+else
+  echo "Artifact not found or an error occurred"
+
+fi
 
 echo "Downloaded"
