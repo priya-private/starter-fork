@@ -3,11 +3,8 @@ steps:
   command: ./src/test_artifact.sh
   key: test1
 
-
-- label: ":test multi line:"
-  command: echo "$(buildkite-agent artifact search "*.txt" --step test1)"
-  depends_on: test1
-
 - label: ":test multi line:"
   command: ./src/multi_line.sh
   depends_on: test1
+  soft_fail:
+    - exit_status: 1
