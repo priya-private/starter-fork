@@ -15,7 +15,7 @@ echo "artifact status"
 
 
 
-buildkite-agent artifact search foo.txt
+buildkite-agent artifact search foo1.txt
 status=$?
 
 if [ $status -eq 0 ]; then
