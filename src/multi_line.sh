@@ -4,7 +4,9 @@ set -e
 
 echo "Downloading"
 
-buildkite-agent artifact download "*.txt" --step "test1"
+
+
+buildkite-agent artifact download "test1.txt" --step "test1"
 
 
 echo "Downloaded"
