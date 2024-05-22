@@ -10,7 +10,7 @@ cd ..
 pwd
 ls
 
-buildkite-agent artifact download  --step "test1" "*.txt"
+buildkite-agent artifact download *.txt --step "test1" 
 
 
 echo "Downloaded"
