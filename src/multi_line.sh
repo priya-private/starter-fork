@@ -4,9 +4,10 @@ set -e
 
 echo "Downloading"
 
-echo pwd
+pwd
 ls
 cd ..
+pwd
 ls
 
 buildkite-agent artifact download  --step "test1" "*.txt"
