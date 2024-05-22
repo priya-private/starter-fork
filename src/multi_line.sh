@@ -6,7 +6,7 @@ echo "Downloading"
 
 pwd
 ls
-cd ..
+cd src
 pwd
 ls
 
