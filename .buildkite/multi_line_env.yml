@@ -5,5 +5,5 @@ steps:
 
 
 - label: ":test multi line:"
-  command: echo $(buildkite-agent artifact search "*.txt" --step test1)
+  command: echo "$(buildkite-agent artifact search "*.txt" --step test1)" | buildkite-agent artifact download "*.txt" --step test1
   depends_on: test1
