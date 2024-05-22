@@ -8,7 +8,7 @@ pwd
 ls
 
 
-if buildkite-agent artifact search fooq.txt; then
+if buildkite-agent artifact search foo.txt; then
   echo "Artifact found"
 fi
 
