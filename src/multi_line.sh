@@ -15,13 +15,13 @@ echo "artifact status"
 
 
 
-buildkite-agent artifact search foo1.txt
+output=$(buildkite-agent artifact search foo.txt 2>&1)
 status=$?
 
 if [ $status -eq 0 ]; then
   echo "Artifact found"
 else
-  echo "Artifact not found"
+  echo "Artifact not found or an error occurred"
+  echo "Error details: $output"
 fi
-
 echo "Downloaded"
