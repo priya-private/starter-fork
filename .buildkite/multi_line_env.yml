@@ -1,3 +1,9 @@
 steps:
 - label: ":test multi line:"
   command: echo  "hello" | buildkite-agent artifact upload "*.txt"
+  key: test1
+
+
+- label: ":test multi line:"
+  command: echo  "hello" | buildkite-agent artifact download "*.txt"
+  depends_on: test1
