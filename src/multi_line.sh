@@ -13,10 +13,15 @@ ls
 echo "artifact status"
 
 
-if echo $(buildkite-agent artifact search "foo.txt" --step "step1"); then
-  echo "artifact exists"
-else 
-  echo "artifact doesn't exists"
+
+
+buildkite-agent artifact search foo.txt
+status=$?
+
+if [ $status -eq 0 ]; then
+  echo "Artifact found"
+else
+  echo "Artifact not found"
 fi
 
 echo "Downloaded"
