@@ -1,9 +1,13 @@
 steps:
 - label: ":test multi line:"
-  command: echo  "hello" | buildkite-agent artifact upload "*.txt"
+  command: echo  "hello" | buildkite-agent artifact upload "artifact.txt"
   key: test1
 
 
 - label: ":test multi line:"
-  command: echo "$(buildkite-agent artifact search "*.txt1" --step test1)"
+  command: echo "$(buildkite-agent artifact search "*.txt" --step test1)"
+  depends_on: test1
+
+- label: ":test multi line:"
+  command: ./src/multi_line.sh
   depends_on: test1
