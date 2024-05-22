@@ -3,4 +3,6 @@
 
 set -e
 
-buildkite-agent artifact upload "artifact.txt"
+
+touch foo.txt
+buildkite-agent artifact upload "foo.txt"
