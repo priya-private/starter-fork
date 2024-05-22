@@ -1,3 +1,3 @@
 steps:
 - label: ":test multi line:"
-  command: echo  "hello" | buildkite-agent artifact upload "/*.md"
+  command: echo  "hello" | buildkite-agent artifact upload "*.txt"
