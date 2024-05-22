@@ -1,6 +1,6 @@
 steps:
 - label: ":test multi line:"
-  command: echo  "hello" | buildkite-agent artifact upload "artifact.txt"
+  command: ./src/test_artifact.sh
   key: test1
 
 
