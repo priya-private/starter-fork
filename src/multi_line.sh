@@ -19,8 +19,5 @@ echo "status $status"
 
 if [ $status -eq 0 ]; then
   echo "Artifact found"
-else
-  echo "Artifact not found or an error occurred"
-  echo "Error details: $output"
-fi
+
 echo "Downloaded"
