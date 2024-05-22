@@ -2,7 +2,9 @@
 
 set -e
 
-foo='line1\nline2\nline3'
+echo "Downloading"
 
-echo $foo
-export "$foo"
+buildkite-agent artifact download "*.txt"
+
+
+echo "Downloaded"

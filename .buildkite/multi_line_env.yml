@@ -5,5 +5,5 @@ steps:
 
 
 - label: ":test multi line:"
-  command: echo  "hello" | buildkite-agent artifact download "*.txt"
+  command: ./src/multi_line.sh
   depends_on: test1
