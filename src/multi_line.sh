@@ -6,11 +6,7 @@ echo "Downloading"
 
 pwd
 ls
-cd src
-pwd
-ls
 
-echo "artifact status"
 
 
 
