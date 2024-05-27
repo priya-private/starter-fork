@@ -4,7 +4,7 @@ set -euo pipefail
 echo "Post-artifact hook, searching for artifact"
 
 
-if [BUILDKITE_LABEL=":test multi line:"]; then
+if [ BUILDKITE_LABEL == ":test multi line:" ]; then
     echo "searching for artifact"
     output=$(buildkite-agent artifact search testr/revisions1/foo.txt 2>&1)
     status=$?
