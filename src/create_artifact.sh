@@ -4,8 +4,8 @@ set -e
 
 pwd
 cd ..
-mkdir test
-cd test
+mkdir testr
+cd testr
 pwd
 mkdir revisions
 cd revisions
