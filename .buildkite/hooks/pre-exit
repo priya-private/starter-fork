@@ -3,6 +3,8 @@ set -euo pipefail
 
 echo "pre-exit hook, searching for artifact"
 
+buildkite-agent artifact search testr/revisions1/foo.txt 2>&1
+
 if [ $BUILDKITE_LABEL == ":test multi line:" ]; then
     echo "inside if"
 
