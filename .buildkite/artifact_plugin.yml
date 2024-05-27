@@ -4,7 +4,9 @@ steps:
     plugins:
       - artifacts#v1.9.2:
           upload: "testr/revisions1/foo.txt"
-          BUILDKITE_PLUGIN_ARTIFACTS_IGNORE_MISSING: false
+    env:
+      BUILDKITE_PLUGIN_ARTIFACTS_IGNORE_MISSING: false
+          
   
 
   - command: "download"
