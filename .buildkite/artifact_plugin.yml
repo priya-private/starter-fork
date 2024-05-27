@@ -3,5 +3,5 @@ steps:
     command: ./src/create_artifact.sh
     plugins:
       - artifacts#v1.9.2:
-          upload: "testr/revisions/*"
+          upload: "testr/revisions1/*"
 
