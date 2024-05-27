@@ -3,10 +3,10 @@ steps:
     command: ./src/create_artifact.sh
     plugins:
       - artifacts#v1.9.2:
-          upload: "testr/revisions1/fool.txt"
+          upload: "testr/revisions1/foo.txt"
   
 
   - command: "download"
     plugins:
       - artifacts#v1.9.2:
-          download: "testr/revisions1/fool.txt"
+          download: "testr/revisions1/foo.txt"
