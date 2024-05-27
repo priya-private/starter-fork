@@ -1,7 +1,4 @@
 steps:
   - label: ":test multi line:"
     command: ./src/create_artifact.sh
-    plugins:
-      - artifacts#v1.9.2:
-        upload:
-          - test/revisions/*
+
