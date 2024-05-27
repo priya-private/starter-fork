@@ -11,5 +11,5 @@ pwd
 cd revisions
 
 touch foo.txt
-buildkite-agent artifact upload "foo.txt"
+
 ls
