@@ -10,10 +10,10 @@ if [ $BUILDKITE_LABEL == ":test multi line:" ]; then
     
     status=$?
     if [ $status -eq 0 ]; then
-    echo "Artifact found"
+        echo "Artifact found"
     else
-    echo "not found if"
-    echo "Artifact not found or an error occurred"
-    echo "Error details: $output"
+        echo "not found if"
+        echo "Artifact not found or an error occurred"
+        echo "Error details: $output"
     fi
 fi
