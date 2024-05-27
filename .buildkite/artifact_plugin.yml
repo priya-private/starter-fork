@@ -4,6 +4,7 @@ steps:
     plugins:
       - artifacts#v1.9.2:
           upload: "testr/revisions1/foo.txt"
+          ignore_missing: false
   
 
   - command: "download"
