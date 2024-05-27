@@ -5,7 +5,7 @@ steps:
       - artifacts#v1.9.2:
           upload: "testr/revisions1/foo.txt"
     env:
-      BUILDKITE_PLUGIN_ARTIFACTS_IGNORE_MISSING: false
+      BUILDKITE_PLUGIN_ARTIFACTS_IGNORE_MISSING: "false"
           
   
 
