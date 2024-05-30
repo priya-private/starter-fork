@@ -7,9 +7,9 @@ cd ..
 
 cd testr
 pwd
-
-cd revisions
-
+mkdir revisions1
+cd revisions1
+pwd
 touch foo.txt
 
 ls
