@@ -3,7 +3,6 @@
 set -e
 
 pwd
-cd ..
 
 cd testr
 pwd
