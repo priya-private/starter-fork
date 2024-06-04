@@ -1,3 +1,3 @@
 steps:
 - label: Deploy to testing
-  command: echo "reverted"
+  command: echo "added"
