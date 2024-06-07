@@ -6,4 +6,4 @@ steps:
           watch:
             - path: src/
               config:
-                command: "echo Make Changes cmd"
+                command: "echo Make Changes cmd with dollar"
