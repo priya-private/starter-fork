@@ -5,4 +5,4 @@ steps:
 
   - label: Download
     depends_on: step1
-    command: buildkite-agent artifact download "./upload.txt" .
+    command: buildkite-agent artifact download "*upload.txt" .
