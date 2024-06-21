@@ -1,3 +1,7 @@
 steps:
   - label: "test"
+<<<<<<< HEAD
     command: echo "1"
+=======
+    command: echo "3e"
+>>>>>>> c2d2e7a (t)
