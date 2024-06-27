@@ -3,4 +3,4 @@ steps:
   command: echo "hello"
 
 - label: ":pipeline:"
-  command: chmod +x ./src/generate_block.sh | buildkite-agent pipeline upload
+  command: "buildkite-agent pipeline upload .buildkite/dynamic_step.yml"
