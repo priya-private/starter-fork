@@ -9,10 +9,14 @@ ls
 
 name="test_cleanup"
 
+cd src
 
-echo "running cleanup script ./src/cleanaup/$name.sh"
+ls
 
-chmod +x ./src/cleanaup/$name.sh
+
+echo "running cleanup script /src/cleanaup/$name.sh"
+
+chmod +x /src/cleanaup/$name.sh
 
 ./.buildkite/cleanaup/$name.sh
 
