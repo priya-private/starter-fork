@@ -1,0 +1,20 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "pre-exit hook, running"
+
+
+echo "pwd"
+
+name="test_cleanup"
+
+
+echo "running cleanup script ./.buildkite/cleanaup/$name.sh"
+
+chmod +x ./.buildkite/cleanaup/$name.sh
+
+./.buildkite/cleanaup/$name.sh
+
+
+
+echo "script called"
