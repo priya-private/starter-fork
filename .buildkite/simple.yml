@@ -1,6 +1,8 @@
 steps:
   - label: "test"
+    key: "one"
     command: echo "3e"
 
   - label: "test1"
+    key: "two"
     command: echo "4e"

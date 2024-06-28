@@ -7,18 +7,18 @@ echo "pre-exit hook, running"
 pwd
 ls
 
-name="test_cleanup"
+
 
 cd src
 
 ls
 
 
-echo "running cleanup script $name.sh"
+echo "running cleanup script $BUILDKITE_STEP_KEY.sh"
 
-chmod +x ./$name.sh
+chmod +x ./$BUILDKITE_STEP_KEY.sh
 
-./$name.sh
+./$BUILDKITE_STEP_KEY.sh
 
 
 
