@@ -14,11 +14,11 @@ cd src
 ls
 
 
-echo "running cleanup script /src/cleanaup/$name.sh"
+echo "running cleanup script /src/$name.sh"
 
-chmod +x /src/cleanaup/$name.sh
+chmod +x /src/$name.sh
 
-./.buildkite/cleanaup/$name.sh
+./src/$name.sh
 
 
 
