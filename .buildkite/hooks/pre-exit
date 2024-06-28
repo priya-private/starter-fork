@@ -14,9 +14,9 @@ cd src
 ls
 
 
-echo "running cleanup script /src/$name.sh"
+echo "running cleanup script ./src/$name.sh"
 
-chmod +x /src/$name.sh
+chmod +x ./src/$name.sh
 
 ./src/$name.sh
 
