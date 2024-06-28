@@ -14,11 +14,11 @@ cd src
 ls
 
 
-echo "running cleanup script ./src/$name.sh"
+echo "running cleanup script $name.sh"
 
-chmod +x ./src/$name.sh
+chmod +x $name.sh
 
-./src/$name.sh
+$name.sh
 
 
 
