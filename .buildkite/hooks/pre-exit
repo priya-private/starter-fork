@@ -16,9 +16,9 @@ ls
 
 echo "running cleanup script $name.sh"
 
-chmod +x $name.sh
+chmod +x ./$name.sh
 
-$name.sh
+./$name.sh
 
 
 
