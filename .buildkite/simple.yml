@@ -1,4 +1,4 @@
 steps:
   - label: "test"
     key: "test_s3_env"
-    command: echo $TEST_S3_TOKEN
+    command: echo $TEST_S3_TOKEN $TEST_ID
