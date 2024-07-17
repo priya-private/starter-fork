@@ -1,6 +1,4 @@
 steps:
   - label: "test"
-    key: "one"
-    command: echo $PKG_TOKEN | buildkite-agent meta-data set "dd_tags.team" "priya_pipeline"
-
-
+    key: "test_s3_env"
+    command: echo $TEST_S3_TOKEN
