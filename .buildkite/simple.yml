@@ -2,6 +2,8 @@ steps:
   - label: "test"
     skip: false
     command: echo "test"
+    env:
+      SERVER: """
   
   - label: "build"
     branches: test
