@@ -2,6 +2,9 @@
 steps:
 - label: Testing triggers
   command: echo "hello"
-
-- trigger: "simple"
-  label: "Sub-pipeline"
+- build:
+    meta_data:
+      release-version: '1.1'
+  label: ":rocket: Deploy event trigger"
+  trigger: step-notification
+  branches: main
