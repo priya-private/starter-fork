@@ -1,5 +1,5 @@
 - label: Testing triggers
   command: echo "hello"
 
-- trigger: simple
-  label: ":rocket: Deploy event trigger"
+- label: ":rocket: Deploy event trigger"
+  trigger: "simple"
