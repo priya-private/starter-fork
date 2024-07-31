@@ -1,6 +1,5 @@
 - label: Testing triggers
   command: echo "hello"
 
-- trigger: "simple"
+- trigger: simple
   label: ":rocket: Deploy event trigger"
-  async: true
