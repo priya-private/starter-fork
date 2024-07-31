@@ -1,4 +1,10 @@
 steps:
   - label: "test"
-    key: "test_s3_env"
-    command: "test"
+    command: echo "test"
+  
+  - label: "build"
+    skip: "build"
+    command: echo "build"
+  
+  - label: "deploy"
+    command: echo "deploy"
