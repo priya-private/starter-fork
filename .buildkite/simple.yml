@@ -3,7 +3,7 @@ steps:
     command: echo "test"
   
   - label: "build"
-    branch: test
+    branches: test
     command: echo "build"
   
   - label: "deploy"
