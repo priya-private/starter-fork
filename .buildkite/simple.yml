@@ -7,7 +7,7 @@ steps:
   
   - label: "build"
     branches: test
-    command: echo "buildc"
+    command: echo "buildcc"
   
   - label: "deploy"
     command: echo "decploy"
