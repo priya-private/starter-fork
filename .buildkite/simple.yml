@@ -1,6 +1,6 @@
 steps:
   - label: "test"
-    skip: true
+    skip: false
     command: echo "test"
   
   - label: "build"
