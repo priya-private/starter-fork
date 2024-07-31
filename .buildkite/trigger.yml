@@ -1,5 +1,7 @@
+---
+steps:
 - label: Testing triggers
   command: echo "hello"
 
 - label: ":rocket: Deploy event trigger"
-  trigger: "artifact"
+  trigger: simple
