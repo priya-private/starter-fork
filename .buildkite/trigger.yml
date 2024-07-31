@@ -6,5 +6,5 @@ steps:
     meta_data:
       release-version: '1.1'
   label: ":rocket: Deploy event trigger"
-  trigger: step-notification
+  trigger: simple
   branches: main
