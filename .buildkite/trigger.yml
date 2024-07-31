@@ -7,4 +7,3 @@ steps:
       release-version: '1.1'
   label: ":rocket: Deploy event trigger"
   trigger: simple
-  branches: main
