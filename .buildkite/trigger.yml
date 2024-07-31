@@ -3,4 +3,5 @@ steps:
 - label: Testing triggers
   command: echo "hello"
 
-
+- trigger: "simple"
+  label: "Sub-pipeline"
