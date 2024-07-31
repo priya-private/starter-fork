@@ -2,4 +2,4 @@
   command: echo "hello"
 
 - label: ":rocket: Deploy event trigger"
-  trigger: "simple"
+  trigger: "artifact"
