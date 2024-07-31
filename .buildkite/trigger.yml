@@ -5,5 +5,5 @@ steps:
 - build:
     meta_data:
       release-version: '1.1'
-  label: ":rocket: Deploy evdent trigcger"
+  label: ":rocket: Deploy evdent trfigcger"
   trigger: simple
