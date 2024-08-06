@@ -1,13 +1,8 @@
+---
 steps:
-  - label: "test"
-    skip: false
-    command: echo "test"
-    env:
-      SERVER: ""
-  
-  - label: "build"
-    branches: test
-    command: echo "buildcc"
-  
-  - label: "deploy"
-    command: echo "decploy"
+- key: dd_key_test
+  label: test
+  command: echo "3e" | buildkite-agent meta-data set "dd_tags.team" $BUILDKITE_STEP_KEY
+- key: two
+  label: test1
+  command: echo "3e" | buildkite-agent meta-data set "dd_tags.team" $BUILDKITE_PIPELINE_SLUG
