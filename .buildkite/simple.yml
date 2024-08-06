@@ -2,7 +2,7 @@
 steps:
 - key: dd_key_test_one
   label: test
-  command: buildkite-agent meta-data set "dd_tags.key" $BUILDKITE_STEP_KEY
+  command: echo buildkite-agent meta-data set "dd_tags.key" $BUILDKITE_STEP_KEY
 - key: key_two
   label: test1
   command: echo "$BUILDKITE_PIPELINE_SLUG" | buildkite-agent meta-data set "dd_tags.pipeline" $BUILDKITE_PIPELINE_SLUG
