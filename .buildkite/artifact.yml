@@ -4,4 +4,4 @@ steps:
     command: buildkite-agent artifact upload "./upload.txt"
     env:
       BUILDKITE_ARTIFACT_UPLOAD_DESTINATION: "s3://priyak-test-bucket/artifacts/"
-      BUILDKITE_S3_ACL: "public"
+      BUILDKITE_S3_ACL: "public-read"
