@@ -5,4 +5,5 @@ steps:
     env:
       BUILDKITE_ARTIFACT_UPLOAD_DESTINATION: "s3://priyak-test-bucket/$BUILDKITE_BUILD_NUMBER/"
       BUILDKITE_S3_ACL: "private"
-      BUILDKITE_S3_ACCESS_URL: "https://s3.console.aws.amazon.com/s3/object/priyak-test-bucket.s3.amazonaws.com?region=ap-southeast-2&prefix="
+      BUILDKITE_S3_ACCESS_URL: "https://s3.console.aws.amazon.com/s3/object/priyak-test-bucket?region=ap-southeast-2&prefix=""
+
