@@ -2,7 +2,6 @@ steps:
   - label: Upload
     key: step1
     command: buildkite-agent artifact upload "./upload.txt"
-
-  - label: Download
-    depends_on: step1
-    command: buildkite-agent artifact download "*upload.txt" .
+    env:
+      BUILDKITE_ARTIFACT_UPLOAD_DESTINATION: "s3://priyak-test-bucket/artifacts/"
+      BUILDKITE_S3_ACL: "public"
