@@ -1,5 +1,7 @@
 ---
 steps:
+- label: ":rocket:"
+  command: ./src/test.sh
 - key: dd_key_test_one
   label: step_1
   command: buildkite-agent meta-data set "dd_tags.key" dd_key_test_one
