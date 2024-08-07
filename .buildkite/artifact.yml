@@ -3,5 +3,5 @@ steps:
     key: step1
     command: buildkite-agent artifact upload "./upload.txt"
     env:
-      BUILDKITE_ARTIFACT_UPLOAD_DESTINATION: "s3://priyak-test-bucket/artifacts/"
+      BUILDKITE_ARTIFACT_UPLOAD_DESTINATION: "s3://priyak-test-bucket/$BUILDKITE_BUILD_NUMBER/"
       BUILDKITE_S3_ACL: "private"
