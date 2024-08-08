@@ -2,4 +2,5 @@
 
 set -Eeufo pipefail
 
-echo "Hello World, {"a": 1}"
+echo "Hello World, {"\a\": 1}"
+
