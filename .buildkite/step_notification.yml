@@ -10,9 +10,7 @@ steps:
            - label: "Notify slack about soft passed step"
              command: echo "Notifying slack about the passed step"
              notify:
-               - slack:
-                   channels:
-                     - "@U06PNF3JFHR-Priya"
+               - slack: "@U06PNF3JFHR"
                    message: "Step1 has passed. <@U06PNF3JFHR> "
       YAML
       fi
