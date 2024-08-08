@@ -11,6 +11,5 @@ steps:
              command: echo "Notifying slack about the passed step"
              notify:
                - slack: "@U06PNF3JFHR"
-                   message: "Step1 has passed. <@U06PNF3JFHR> "
       YAML
       fi
