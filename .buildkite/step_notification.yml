@@ -15,7 +15,7 @@ steps:
              notify:
                - slack:
                    channels:
-                     - "#priya-test"
+                     - "<@U06PNF3JFHR>"
                    message: "Step1 has passed. <@U06PNF3JFHR> "
       YAML
       fi
