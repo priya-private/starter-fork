@@ -1,6 +1,6 @@
 
 steps:
-
+  - wait:
   - input: "Information please"
     key: "information"
     fields:
