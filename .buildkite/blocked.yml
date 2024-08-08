@@ -8,15 +8,14 @@ steps:
         key: "todays-date"
 
   - label: ":rocket:"
-    command: "hi"
+    command: echo "hi"
     depends_on: "information"
   
   - block: "Release"
-    blocked_state: "running"
     key: "release"
 
   - label: ":rocket:"
-    command: "hi"
+    command: echo "hi"
     depends_on: "release"
 
 
