@@ -12,6 +12,7 @@ steps:
     depends_on: "information"
   
   - block: "Release"
+    blocked_state: "running"
     key: "release"
 
   - label: ":rocket:"
