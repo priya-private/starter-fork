@@ -10,4 +10,12 @@ steps:
   - label: ":rocket:"
     command: "hi"
     depends_on: "information"
+  
+  - block: "Release"
+    key: "release"
+
+  - label: ":rocket:"
+    command: "hi"
+    depends_on: "release"
+
 
