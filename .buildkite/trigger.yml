@@ -2,8 +2,5 @@
 steps:
 - label: Testing triggers
   command: echo "hello"
-- build:
-    meta_data:
-      release-version: '1.1'
-  label: ":rocket: Deploy evdent trfigcger"
-  trigger: simple
+- label: ":rocket: Deploy evdent trfigcger"
+  trigger: blocked
