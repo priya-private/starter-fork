@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+echo "post checkout from repo"
