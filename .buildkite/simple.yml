@@ -2,7 +2,7 @@
 steps:
 - key: dd_key_test_one
   label: step_1
-  command: buildkite-agent meta-data set "dd_tags.key" dd_key_test_one
+  command: exit 1
   soft_fail:
     - exit_status: 1
 - key: dd_key_test_two
