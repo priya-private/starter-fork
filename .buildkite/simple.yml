@@ -1,8 +1,12 @@
 ---
 steps:
+env:
+  BUILDKITE_AGENT_DEBUG_SIGNING:True
 - key: dd_key_test_one
   label: step_1
   command: exit 1
+  env:
+    $TEST_ENV_CMD: "True"
   soft_fail:
     - exit_status: 1
 - key: dd_key_test_two
