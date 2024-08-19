@@ -1,7 +1,6 @@
 ---
 steps:
-env:
-  BUILDKITE_AGENT_DEBUG_SIGNING:True
+
 - key: dd_key_test_one
   label: step_1
   command: exit 1
