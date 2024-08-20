@@ -6,8 +6,12 @@ steps:
   command: exit 1
   env:
     $TEST_ENV_CMD: "True"
-  soft_fail:
-    - exit_status: 1
+  notify:
+    - if: "build.branch == \"main\" && build.state != 'failing' && build.state != 'failed' && build.state != 'canceling' && build.state != 'canceled'"
+      slack:
+        message: ":large_green_circle: [data] Production Deploy Starting"
+        channels:
+        - "#data-test"
 - key: dd_key_test_two
   label: step_2
   command: buildkite-agent meta-data set "dd_tags.key" dd_key_test_two
