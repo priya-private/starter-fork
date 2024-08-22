@@ -2,5 +2,5 @@ steps:
   - command: echo "hello"
     plugins:
       - docker-login#v3.0.0:
-          username: priya.tk88@gmail.com
+          username: BUILDKITE_PLUGIN_DOCKER_LOGIN_USERNAME
           password-env: MY_DOCKER_LOGIN_PASSWORD
