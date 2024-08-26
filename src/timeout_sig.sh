@@ -1,6 +1,7 @@
 #!/bin/bash
 
 shell_event_handler() {
+    sleep 70
     echo "${1} received."
 
     case "${1}" in
