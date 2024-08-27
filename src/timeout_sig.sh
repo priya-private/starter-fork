@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 shell_event_handler() {
     sleep 70
     echo "inside event handler"
@@ -35,7 +36,7 @@ trap 'shell_event_handler SIGQUIT' SIGQUIT
 
  echo "outside event handler"
  sleep 70
- 
+
 ...
 pulumi up -r --skip-preview --stack calibrate/${project_name}/${environment}-${service_name} \
     --config-file "${workspace_dir}/${config_path}/Pulumi.${environment}.yaml"
