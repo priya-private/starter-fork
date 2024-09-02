@@ -14,7 +14,7 @@ steps:
         channels:
         - "#data-test"
 - key: dd_key_test_two
-  depends_on: one
+  depends_on: 
   label: step_2
   command: buildkite-agent meta-data set "dd_tags.key" dd_key_test_two
 - key: dd_key_test_three
