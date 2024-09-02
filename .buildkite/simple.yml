@@ -4,6 +4,7 @@ steps:
 - key: dd_key_test_one
   label: step_1
   command: echo "help"
+  key: one
   env:
     $TEST_ENV_CMD: "True"
   notify:
@@ -13,6 +14,7 @@ steps:
         channels:
         - "#data-test"
 - key: dd_key_test_two
+  depends_on: one
   label: step_2
   command: buildkite-agent meta-data set "dd_tags.key" dd_key_test_two
 - key: dd_key_test_three
