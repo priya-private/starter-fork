@@ -1,8 +1,15 @@
+agents: &pin_graviton_agents
+  - 'queue=ios-graviton'
+
+agents: &pin_agents
+  - 'queue=default'
+
 steps:
   - label: "Triggering pipelines"
     plugins:
       - monorepo-diff#v1.0.1:
           diff: "git diff --name-only HEAD~1"
+          agents: *pin_agents
           watch:
             - path: src/
               config:
@@ -10,6 +17,8 @@ steps:
             - path:
                 - src/
               config:
-                trigger: "freeze"
+                command: echo "hi from monorepo-diff"
                 label: ":trigger"
+                agents: *pin_agents
+    agents: *pin_agents
 
