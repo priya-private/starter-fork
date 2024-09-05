@@ -9,7 +9,6 @@ steps:
     plugins:
       - monorepo-diff#v1.0.1:
           diff: "git diff --name-only HEAD~1"
-          agents: *pin_agents
           watch:
             - path: src/
               config:
