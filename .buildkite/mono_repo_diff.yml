@@ -1,8 +1,8 @@
 agents: &pin_graviton_agents
-  - 'queue=ios-graviton'
+  - 'queue:ios-graviton'
 
 agents: &pin_agents
-  - 'queue=default-queue'
+  - 'queue:default-queue'
 
 steps:
   - label: "Triggering pipelines"
