@@ -16,4 +16,4 @@ steps:
     concurrency_group: "deploy/${BUILDKITE_PIPELINE_SLUG}"
     concurrency: 1
     key: end-gate
-    depends_on: upload
+    depends_on: start-gate
