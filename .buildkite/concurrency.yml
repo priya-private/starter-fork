@@ -3,9 +3,14 @@
   key: deploy_production
   concurrency: 6
   concurrency_group: deploy
+  env:
+    concurrency_token: $BUILDKITE_STEP_ID-$BUILDKITE_STEP_KEY
 
 - command:  echo "anoth one"
   key: deploy_staging
+  
   label: ':rocket: Deploy staging'
   concurrency: 6
   concurrency_group: deploy
+  env:
+    concurrency_token: $BUILDKITE_STEP_ID-$BUILDKITE_STEP_KEY
