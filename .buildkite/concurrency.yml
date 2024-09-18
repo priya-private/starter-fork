@@ -1,0 +1,5 @@
+- command:  echo "1"
+  label: ':rocket: Deploy production'
+  agents:
+    deploy: true
+  concurrency: 6
