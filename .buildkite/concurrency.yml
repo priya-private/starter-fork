@@ -1,4 +1,4 @@
-- command:  echo "$concurrency_group_id"
+- command:  buildkite-agent meta-data set "available" [1,2,3] 
   label: ':rocket: Deploy production'
   key: deploy_production
   concurrency: 6
@@ -10,7 +10,7 @@
 - command:  echo "anoth one"
   key: deploy_staging
   
-  label: ':rocket: Deploy staging'
+  label: echo "$buildkite-agent meta-data get "available""
   concurrency: 6
   concurrency_group: deploy
   env:
