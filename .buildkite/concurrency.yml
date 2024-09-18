@@ -5,7 +5,7 @@
   parallelism: 2
   concurrency_group: deploy
   env:
-    concurrency_token: $BUILDKITE_STEP_ID-deploy_production
+    concurrency_token: $BUILDKITE_PARALLEL_JOB-deploy_production
 
 - command:  echo "anoth one"
   key: deploy_staging
@@ -14,4 +14,4 @@
   concurrency: 6
   concurrency_group: deploy
   env:
-    concurrency_token: $BUILDKITE_STEP_ID-$BUILDKITE_STEP_KEY
+    concurrency_token: $BUILDKITE_PARALLEL_JOB-$BUILDKITE_STEP_KEY
