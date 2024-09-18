@@ -1,4 +1,4 @@
-- command:  echo "1"
+- command:  echo "$concurrency_group_id"
   label: ':rocket: Deploy production'
   concurrency: 6
   concurrency_group: deploy
