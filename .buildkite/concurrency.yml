@@ -3,7 +3,7 @@
   concurrency: 6
   concurrency_group: deploy
 
-- command:  anoth one
+- command:  "anoth one"
   label: ':rocket: Deploy staging'
   concurrency: 6
   concurrency_group: deploy
