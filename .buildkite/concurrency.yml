@@ -1,9 +1,11 @@
 - command:  echo "$concurrency_group_id"
   label: ':rocket: Deploy production'
+  key: deploy_production
   concurrency: 6
   concurrency_group: deploy
 
-- command:  "anoth one"
+- command:  echo "anoth one"
+  key: deploy_staging
   label: ':rocket: Deploy staging'
   concurrency: 6
   concurrency_group: deploy
