@@ -3,3 +3,4 @@
   agents:
     deploy: true
   concurrency: 6
+  concurrency_group: deploy
