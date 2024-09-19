@@ -1,6 +1,6 @@
 - command:   ./src/lable.sh
   label: ':rocket: Deploy production'
-  key: deploy_production
+  key: deploy_production$BUILDKITE_PARALLEL_JOB_COUNT
   concurrency: 6
   parallelism: 2
   concurrency_group: deploy
