@@ -1,4 +1,4 @@
-- command:  buildkite-agent step update "label" "$FILENAME"
+- command:   buildkite-agent step get "label" --step "key"
   label: ':rocket: Deploy production'
   key: deploy_production
   concurrency: 6
