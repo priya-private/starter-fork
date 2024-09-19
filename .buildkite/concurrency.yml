@@ -1,10 +1,11 @@
-- command:  buildkite-agent step update "label" $concurrency_token --append
+- command:  buildkite-agent step update "label" $FILENAME
   label: ':rocket: Deploy production'
   key: deploy_production
   concurrency: 6
   parallelism: 2
   concurrency_group: deploy
   env:
+    FILENAME: "deploy_production"
     concurrency_token: test-deploy_production
 
 - command:  echo "anoth one"
