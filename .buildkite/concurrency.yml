@@ -5,7 +5,7 @@
   parallelism: 2
   concurrency_group: deploy
   env:
-    concurrency_token: $test-deploy_production
+    concurrency_token: test-deploy_production
 
 - command:  echo "anoth one"
   key: deploy_staging
