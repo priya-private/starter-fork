@@ -1,4 +1,4 @@
-- command:   buildkite-agent step get "label" --step $BUILDKITE_STEP_ID
+- command:   buildkite-agent step set "label" "xyz" --step $BUILDKITE_STEP_ID
   label: ':rocket: Deploy production'
   key: deploy_production
   concurrency: 6
