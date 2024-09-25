@@ -1,6 +1,6 @@
 ---
 steps:
 - label: Testing triggers
-  command: exit 1
+  command: echo "Testing triggers"
 - label: ":rocket: Deploy evdent trfigcger"
   trigger: blocked-pipeline
