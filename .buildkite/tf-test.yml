@@ -3,6 +3,6 @@ steps:
     command: echo "hello"
   
   - label: "test env"
-    command: echo "$build"
+    command: echo "${build}"
   
   
