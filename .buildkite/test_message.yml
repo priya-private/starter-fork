@@ -1,0 +1,3 @@
+steps:
+  - label: "checking commit message"
+    command: echo "commit message"
