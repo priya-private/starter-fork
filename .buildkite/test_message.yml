@@ -1,3 +1,3 @@
 steps:
   - label: "checking commit message"
-    command: echo "commit messagewith 0"
+    command: echo "commit messagewith 00"
