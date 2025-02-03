@@ -14,14 +14,14 @@ steps:
 
 - label: ":rocket: trigger  ci"
   command: echo "cd"
-  key: cd
+  key: cd-gate
   depends_on: start-gate
 
 - label: ":rocket: trigger  cd"
   command: echo "cd test"
   parallelism: 1
   key: cd-trigger
-  depends_on: "cd"
+  depends_on: "cd-gate"
 
 - wait:
 
