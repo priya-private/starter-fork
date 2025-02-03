@@ -8,7 +8,7 @@ steps:
     concurrency: 1
     key: start-gate
     depends_on: ci
-	
+
   - wait
 	
   - command: echo "cd"
