@@ -2,7 +2,7 @@
 steps:
   - command: echo "Running ci"
     key: ci
-    command: sleep 3
+    command: sleep 200
 
   - label: ":rocket: trigger  cd"
     trigger: child-pipeline
