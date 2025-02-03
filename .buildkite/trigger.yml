@@ -2,7 +2,7 @@
 steps:
   - command: echo "Running ci"
     key: ci
-    command: sleep 1
+    command: sleep 2
 
   - command: echo "-> Start of concurrency gate"
     concurrency_group: gate
