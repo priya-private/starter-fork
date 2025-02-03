@@ -18,7 +18,7 @@ steps:
   depends_on: start-gate
 
 - label: ":rocket: trigger  cd"
-  command: sleep 15
+  command: sleep 1
   parallelism: 1
   key: cd-trigger
   depends_on: "cd-gate"
