@@ -3,6 +3,7 @@ steps:
 - label: ":rocket: cd"
   key: cd
   command: echo "cd"
+
 - label: ":rocket: CI"
   command: sleep 1
   key: ci
