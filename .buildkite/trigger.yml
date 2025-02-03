@@ -1,6 +1,6 @@
 ---
 steps:
-  - command: echo "Running ci"
+  - command: echo "Running ci "
     key: ci
     command: sleep 10
 
