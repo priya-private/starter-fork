@@ -2,6 +2,7 @@
 steps:
   - command: echo "Running ci"
     key: ci
+    command: sleep 1
 
   - command: echo "-> Start of concurrency gate"
     concurrency_group: gate
@@ -9,7 +10,7 @@ steps:
     key: start-gate
     depends_on: ci
 
-  - wait:
+  - wait: ~
 	
   - command: echo "cd"
     key: cd
@@ -21,7 +22,7 @@ steps:
     key: cd-trigger
     depends_on: [cd]
 
-  - wait:
+  - wait: ~
 
   - command: echo "End of concurrency gate <--"
     concurrency_group: gate
