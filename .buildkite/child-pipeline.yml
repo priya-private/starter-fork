@@ -4,6 +4,32 @@ steps:
   key: cd
   command: echo "cd"
 
-- label: ":rocket: CI"
-  command: sleep 1
-  key: ci
+  - command: echo "-> Start of concurrency gate"
+    concurrency_group: gate
+    concurrency: 1
+    key: start-gate
+    depends_on: "cd"
+
+  - wait:
+
+  - label: ":rocket: trigger  ci"
+    command: echo "cd"
+    key: cd
+    depends_on: start-gate
+
+  - label: ":rocket: trigger  cd"
+    command: echo "cd test"
+    parallelism: 1
+    key: cd-trigger
+    depends_on: "cd"
+
+  - wait:
+
+  - label: ":rocket: trigger  ci end gate"
+    command: echo "End of concurrency gate <--"
+    concurrency_group: gate
+    concurrency: 1
+    key: end-gate
+  
+  - command: echo "This and subsequent steps run independently"
+    depends_on: "end-gate"
