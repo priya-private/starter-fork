@@ -10,7 +10,7 @@ steps:
     key: start-gate
     depends_on: "ci"
 
-  - wait: ~
+  - wait:
 	
   - command: echo "cd"
     key: cd
@@ -20,9 +20,9 @@ steps:
     trigger: child-pipeline
     parallelism: 1
     key: cd-trigger
-    depends_on: [cd]
+    depends_on: "cd"
 
-  - wait: ~
+  - wait:
 
   - command: echo "End of concurrency gate <--"
     concurrency_group: gate
@@ -30,4 +30,4 @@ steps:
     key: end-gate
   
   - command: echo "This and subsequent steps run independently"
-    depends_on: end-gate
+    depends_on: "end-gate"
