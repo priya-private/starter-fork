@@ -8,7 +8,7 @@ steps:
     concurrency_group: gate
     concurrency: 1
     key: start-gate
-    depends_on: ci
+    depends_on: "ci"
 
   - wait: ~
 	
