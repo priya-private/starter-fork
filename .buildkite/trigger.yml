@@ -1,10 +1,32 @@
 ---
 steps:
-- label: ":rocket: CI"
-  command: sleep 1
-  key: ci
+  - command: echo "Running ci"
+    key: ci
 
-- label: ":rocket: Deploy ci and cd"
-  trigger: child-pipeline
-  key: cd
-  depends_on: ci
+  - command: echo "--> Start of concurrency gate"
+    concurrency_group: gate
+    concurrency: 1
+    key: start-gate
+    depends_on: ci
+	
+  - wait
+	
+  - command: echo "cd"
+    key: cd
+    depends_on: start-gate
+
+  - label: ":rocket: trigger  cd"
+    trigger: child-pipeline
+    parallelism: 1
+    key: cd-trigger
+    depends_on: [cd]
+
+  - wait
+
+  - command: echo "End of concurrency gate <--"
+    concurrency_group: gate
+    concurrency: 1
+    key: end-gate
+  
+  - command: echo "This and subsequent steps run independently"
+    depends_on: end-gate
