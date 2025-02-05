@@ -1,5 +1,6 @@
 steps:
   - label: "checking commit message"
-    command: "buildkite-agent annotate "All tests passed! :your-emoji: like 🚀"
+    command: echo "Launch the rocket" 
+             buildkite-agent annotate --style "success"
   
 
