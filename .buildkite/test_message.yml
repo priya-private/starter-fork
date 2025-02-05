@@ -1,3 +1,4 @@
 steps:
   - label: "checking commit message"
-    command: echo "commit message with 0000"
+    command: buildkite-agent annotate "All tests passed! :your-emoji: like 🚀"
+  
