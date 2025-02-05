@@ -1,5 +1,5 @@
 steps:
   - label: "checking commit message"
-    command: buildkite-agent annotate "all passed , testing annotation www.google.com $$BUILDKITE_BRANCH " --style "success"
+    command: buildkite-agent annotate "all passed , testing with variable, current branch is- $$BUILDKITE_BRANCH " --style "success"
   
 
