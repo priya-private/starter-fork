@@ -1,6 +1,5 @@
 steps:
   - label: "checking commit message"
+    env:
+      PG-API-KEY: "123456"
     command: echo "$$PG-API-KEY" 
-             buildkite-agent annotate "all passed , testing with variable, current branch is- $$BUILDKITE_BRANCH " --style "success"
-  
-
