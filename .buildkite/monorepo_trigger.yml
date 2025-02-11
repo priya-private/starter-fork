@@ -20,10 +20,8 @@ steps:
                 - .buildkite/
               config:
                 trigger: "child-pipeline"
-                  build:
-                    commit: "HEAD"
-                    branch: "main"
-                    meta_data:
-                      selected_cluster: buildkite-agent meta-data get selected_cluster
-                    env:
-                      target_cluster: "${TARGET_CLUSTER:-buildkite-agent meta-data get selected_cluster}"
+                build:
+                  meta_data:
+                    selected_cluster: "buildkite-agent meta-data get selected_cluster"
+                  env:
+                    target_cluster: "${TARGET_CLUSTER:-buildkite-agent meta-data get selected_cluster}"

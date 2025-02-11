@@ -1,6 +1,6 @@
 ---
 steps:
-- label: ":rocket: cd"
+- label: "TARGET_CLUSTER: ${TARGET_CLUSTER}"
   key: cd
   command: echo "cd"
 
