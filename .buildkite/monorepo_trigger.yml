@@ -26,4 +26,4 @@ steps:
                   meta_data:
                     selected_cluster: buildkite-agent meta-data get selected_cluster
                   env:
-                    target_cluster: "${TARGET_CLUSTER:-buildkite-agent meta-data get selected_cluster}""
+                    target_cluster: "${TARGET_CLUSTER:-buildkite-agent meta-data get selected_cluster}"
