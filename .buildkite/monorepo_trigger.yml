@@ -1,0 +1,26 @@
+steps:
+  - input: "Cluster to deploy"
+    fields:
+    - select: "Cluster"
+      key: "selected_cluster"
+      required: true
+      default: "main"
+      options:
+        - label: "cluster"
+          value: "staging"
+  - label: "Trigger pipelines based on changes to specific paths"
+    if: build.branch == "main"
+    plugins:
+      - monorepo-diff#v1.2.0:
+          watch:
+            # Trigger for grok-in-xai-build-and-deploy
+            - path:
+                - .buildkite/
+              config:
+                trigger: "child-pipeline"
+                build:
+                  commit: "HEAD"
+                  branch: "main"
+                  meta_data:
+                    selected_cluster: buildkite-agent meta-data get selected_cluster
+ 
