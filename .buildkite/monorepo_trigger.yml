@@ -18,8 +18,8 @@ steps:
                 - .buildkite/
               config:
                 trigger: "child-pipeline"
-                  env:
-                    selected_cluster: "buildkite-agent meta-data get selected_cluster"
+                env:
+                  selected_cluster: "buildkite-agent meta-data get selected_cluster"
                 build:
                   commit: "HEAD"
                   branch: "main"
