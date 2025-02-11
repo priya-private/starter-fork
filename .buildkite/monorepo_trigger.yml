@@ -1,5 +1,6 @@
 steps:
   - input: "Cluster to deploy"
+    key: "cluster_select"
     fields:
     - select: "Cluster"
       key: "selected_cluster"
@@ -9,6 +10,7 @@ steps:
         - label: "cluster"
           value: "staging"
   - label: "Trigger pipelines based on changes to specific paths"
+    depends_on: "cluster_select"
     if: build.branch == "main"
     plugins:
       - monorepo-diff#v1.2.0:
