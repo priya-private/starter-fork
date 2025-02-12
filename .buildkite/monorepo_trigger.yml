@@ -13,7 +13,7 @@ steps:
     depends_on: "cluster_select"
     if: build.branch == "main"
     plugins:
-      - priyasudip/monorepo-diff-buildkite-plugin:
+      - priyasudip/monorepo-diff:
           watch:
             # Trigger for grok-in-xai-build-and-deploy
             - path:
