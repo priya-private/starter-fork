@@ -9,7 +9,7 @@ steps:
       options:
         - label: "cluster"
           value: "staging"
-  - label: "Trigger pipelines based on changes to specific paths "
+  - label: "Trigger pipelines based on changes to specific paths"
     depends_on: "cluster_select"
     if: build.branch == "main"
     plugins:
