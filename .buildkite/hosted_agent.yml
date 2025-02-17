@@ -1,4 +1,4 @@
 steps:
 - label: testing hosted agent
-  command: echo $(buildkite-agent secret get 'API_TOKEN')
+  command: ./src/hosted_secret.sh
   key: step1
