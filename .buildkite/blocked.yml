@@ -2,22 +2,19 @@
 steps:
 
   
-  - block: "unblock step one"
-    key: "one"
+  - wait: ~
 
   - label: ":step 1:"
     command: echo "hi"
 
   
-  - block: "unblock step two"
-    key: "two"
+  - wait: ~
 
   - label: ":step 2:"
     command: echo "hi"
 
   
-  - block: "unblock step three"
-    key: "three"
+  - wait: ~
 
   - label: ":step 3:"
     command: echo "hi"
