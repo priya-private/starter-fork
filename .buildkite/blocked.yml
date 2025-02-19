@@ -2,25 +2,25 @@
 steps:
 
   
-  - block: "block step one"
+  - block: "unblock step one"
     key: "one"
 
   - label: ":step 1:"
     command: echo "hi"
-    depends_on: "one"
+
   
-  - block: "block step two"
+  - block: "unblock step two"
     key: "two"
 
   - label: ":step 2:"
     command: echo "hi"
-    depends_on: "two"
+
   
-  - block: "block step three"
+  - block: "unblock step three"
     key: "three"
 
   - label: ":step 3:"
     command: echo "hi"
-    depends_on: "three"
+
 
 
