@@ -12,6 +12,7 @@ steps:
   
   - block: "unblock step two"
     key: two
+    depends_on: 
 
   - label: ":step 2:"
     command: echo "hi"
@@ -20,6 +21,7 @@ steps:
   
   - block: "unblock step three"
     key: three
+    depends_on: 
 
   - label: ":step 3:"
     command: echo "hi"
