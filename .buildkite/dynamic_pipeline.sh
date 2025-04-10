@@ -12,6 +12,6 @@ if [[ "$BUILDKITE_BRANCH" == "main" ]]; then
   echo "  - command: \"echo Deploy!\""  
   echo "    label: \":rocket:\""
   echo "  - command: \"echo test!\""  
-  echo "    label: \":testing :\""
+  echo "    label: \":testing yes for iress :\""
 
 fi
